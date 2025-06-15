@@ -1,0 +1,85 @@
+:root {
+  /* Black */
+  --ttm-color-black-10: #0000000d;
+  --ttm-color-black-20: #0000001a;
+  --ttm-color-black-30: #00000033;
+  --ttm-color-black-40: #00000066;
+  --ttm-color-black-50: #000000b3;
+  --ttm-color-black-60: #000000cc;
+  --ttm-color-black-70: #000000d9;
+  --ttm-color-black-80: #000000e6;
+  --ttm-color-black-90: #000000f2;
+  --ttm-color-black-100: #000000ff;
+
+  /* Blue */
+  --ttm-color-blue-10: #ebeeff;
+  --ttm-color-blue-20: #c2d8ff;
+  --ttm-color-blue-30: #7bb4ff;
+  --ttm-color-blue-40: #338fff;
+  --ttm-color-blue-50: #0077ff;
+  --ttm-color-blue-60: #0358bf;
+  --ttm-color-blue-70: #074190;
+  --ttm-color-blue-80: #0a2a61;
+  --ttm-color-blue-90: #0e1e49;
+  --ttm-color-blue-100: #111131;
+
+  /* Green */
+  --ttm-color-green-10: #ebffee;
+  --ttm-color-green-20: #bef1c9;
+  --ttm-color-green-30: #a7eab7;
+  --ttm-color-green-40: #90e3a4;
+  --ttm-color-green-50: #62d57f;
+  --ttm-color-green-60: #34c759;
+  --ttm-color-green-70: #29a14a;
+  --ttm-color-green-80: #1d7a3a;
+  --ttm-color-green-90: #12542b;
+  --ttm-color-green-100: #062d1b;
+
+  /* Red */
+  --ttm-color-red-10: #ffebeb;
+  --ttm-color-red-20: #ffc6c4;
+  --ttm-color-red-30: #ffb4b1;
+  --ttm-color-red-40: #ffa19d;
+  --ttm-color-red-50: #ff7c76;
+  --ttm-color-red-60: #ff564f;
+  --ttm-color-red-70: #cc413c;
+  --ttm-color-red-80: #992c28;
+  --ttm-color-red-90: #661715;
+  --ttm-color-red-100: #320101;
+
+  /* Slate */
+  --ttm-color-slate-10: #f0f0f5;
+  --ttm-color-slate-20: #d9d9e0;
+  --ttm-color-slate-30: #c2c2ca;
+  --ttm-color-slate-40: #93939f;
+  --ttm-color-slate-50: #646474;
+  --ttm-color-slate-60: #353548;
+  --ttm-color-slate-70: #2a2a3b;
+  --ttm-color-slate-80: #1f1f2e;
+  --ttm-color-slate-90: #141421;
+  --ttm-color-slate-100: #090913;
+
+  /* White */
+  --ttm-color-white-10: #ffffff0d;
+  --ttm-color-white-20: #ffffff1a;
+  --ttm-color-white-30: #ffffff33;
+  --ttm-color-white-40: #ffffff66;
+  --ttm-color-white-50: #ffffffb3;
+  --ttm-color-white-60: #ffffffcc;
+  --ttm-color-white-70: #ffffffd9;
+  --ttm-color-white-80: #ffffffe6;
+  --ttm-color-white-90: #fffffff2;
+  --ttm-color-white-100: #ffffffff;
+
+  /* Yellow */
+  --ttm-color-yellow-10: #fffbeb;
+  --ttm-color-yellow-20: #ffe1bc;
+  --ttm-color-yellow-30: #ffd4a4;
+  --ttm-color-yellow-40: #ffc68c;
+  --ttm-color-yellow-50: #ffac5c;
+  --ttm-color-yellow-60: #ff912c;
+  --ttm-color-yellow-70: #ca7423;
+  --ttm-color-yellow-80: #95571a;
+  --ttm-color-yellow-90: #603a11;
+  --ttm-color-yellow-100: #2a1c08;
+}
