@@ -1,12 +1,12 @@
 export interface UserDTO {
   id: string;
-  name: string;
+  nome: string;
   cpf: string;
   email: string;
-  password: string;
-  confirmPassword: string;
-  phone: string;
-  city: string;
-  state: string;
-  dateCreated: Date;
+  senha: string;
+  confirmarSenha: string;
+  telefone: string;
+  cidade: string;
+  estado: string;
+  criadoEm: Date;
 };

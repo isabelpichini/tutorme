@@ -8,15 +8,15 @@ import "@/styles/Settings/SettingsAcc.css";
 export default function SettingsAcc() {
   const [user, setUser] = useState<UserDTO>({
     id: "",
-    name: "Current Name",
+    nome: "Current Name",
     email: "",
     cpf: "",
-    password: "",
-    confirmPassword: "",
-    phone: "",
-    city: "",
-    state: "",
-    dateCreated: new Date(),
+    senha: "",
+    confirmarSenha: "",
+    telefone: "",
+    cidade: "",
+    estado: "",
+    criadoEm: new Date(),
   });
 
   // QUANDO DER O FETCH NOS DADOS, BOTA NO TRY QUE setUser(res.data); 
@@ -39,10 +39,10 @@ export default function SettingsAcc() {
         </div>
         <InputField
           type="text"
-          id="name"
-          name="name"
+          id="nome"
+          name="nome"
           label="Nome"
-          customValue={user.name}
+          customValue={user.nome}
           customClass="stgs-name"
           changeFn={handleFieldChange}
         />
