@@ -5,7 +5,7 @@ import Home from "@/pages/Home/index.tsx";
 import Profile from "@/pages/Profile/index.tsx";
 import Settings from "@/pages/Settings/index.tsx";
 import StudentLogin from "@/pages/StudentLogin/index.tsx";
-import TutorLogin from "@/pages/TutorLogin/index.tsx";
+import StudentSignup from "@/pages/StudentSignup/index.tsx";
 
 export default function AppRoutes() {
   return (
@@ -16,7 +16,7 @@ export default function AppRoutes() {
       <Route path="/settings" element={<Settings />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/student-login" element={<StudentLogin />} />
-      <Route path="/tutor-login" element={<TutorLogin />} />
+      <Route path="/student-signup" element={<StudentSignup />} />
     </Routes>
   );
 }

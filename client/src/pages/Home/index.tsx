@@ -11,6 +11,7 @@ export default function Home() {
         <p>This is where you can find the latest updates and news.</p>
 
         <a href="/student-login">Login do estudante</a>
+        <a href="/profile">Perfil</a>
       </main>
       <Footer />
     </>

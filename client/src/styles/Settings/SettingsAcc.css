@@ -1,0 +1,36 @@
+.stgs  {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem;
+  width: 100%;
+
+  gap: 1.5rem;
+
+  .stgs-row {
+    display: flex;
+
+    gap: 1rem;
+
+    .user-pic {
+      align-items: center;
+      display: flex;
+      height: 5.25rem;
+      justify-content: center;
+      width: 5.25rem;
+
+      background-color: var(--ttm-bg-accent);
+      border: solid 1px var(--ttm-bor-accent-3rd);
+      border-radius: 99rem;
+
+      .user-pic-ic {
+        width: 3rem;
+        height: 3rem;
+        color: var(--ttm-ic-on-accent);
+      }
+    }
+
+    .stgs-name {
+        width: 25rem;
+    }
+  }
+}

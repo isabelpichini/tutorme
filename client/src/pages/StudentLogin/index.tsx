@@ -1,44 +1,24 @@
-import GlassBg from "@/components/layout/GlassBg";
+import "@/styles/StudentLogin/StudentLogin.css";
+
+import GlassBg from "@/components/layout/GlassBg.tsx";
+import LoginForm from "@/pages/StudentLogin/LoginForm";
+import LoginImg from "@/pages/StudentLogin/Illustration.tsx";
 
 export default function StudentLogin() {
   return (
-    <>
-      <div className="login-illustration">
-      </div>
+    <div className="login">
+      <LoginImg />
       <div className="layout">
         <header>
           <h2>Comece sua jornada</h2>
           <h1>Entre na sua conta.</h1>
           <p>
-            Ainda não possui conta? <a href="">Registre-se.</a>
+            Ainda não possui uma? <a href="/student-signup">Registre-se.</a>
           </p>
         </header>
-        <form action="">
-          <div className="form-group">
-            <label htmlFor="email"> E-mail: </label>
-            <div className="input">
-              <input type="email" id="email" name="email" required />
-              <img src="" alt="" className="input-icon" aria-hidden="true" />
-            </div>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="password"> Senha: </label>
-            <div className="input">
-              <input type="password" id="password" name="password" required />
-              <img src="" alt="" className="input-icon" aria-hidden="true" />
-            </div>
-          </div>
-
-          <button type="submit">Entrar</button>
-
-          <p>
-            Clicando em ‘Entrar’, você confirma que leu e concorda com os nossos{" "}
-            <a href="">Termos de Uso</a> e<a>Política de Privacidade</a>.
-            </p>
-        </form>
+      <LoginForm />
       </div>
       <GlassBg />
-    </>
+    </div>
   );
 }

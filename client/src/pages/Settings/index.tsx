@@ -1,9 +1,19 @@
+import "@/styles/Settings/Settings.css";
+
+import GlassBg from "@/components/layout/GlassBg";
+import SettingsAcc from "./User Settings/SettingsAcc";
+import SettingsAccSecurity from "./User Settings/SettingsAccSecurity";
+import SettingsAccSupport from "./User Settings/SettingsAccSupport";
+
 export default function Settings() {
   return (
     <>
-      <h1>Settings Page</h1>
-      <p>This is your settings page.</p>
-      <p>Here you can adjust your preferences and configurations.</p>
+      <div className="bg-pane">
+        <SettingsAcc />
+        <SettingsAccSecurity />
+        <SettingsAccSupport />
+      </div>
+      <GlassBg />
     </>
   );
 }
