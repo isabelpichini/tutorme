@@ -8,11 +8,8 @@ export const submitSignupForm = async (formData: UserDTO) => {
       formData
     );
 
-    if (response.status === 201 || response.status === 200) {
-      alert("Aluno cadastrado com sucesso!");
-      console.log("Signup successful!", response.data);
-      return { success: true };
-    }
+    return response.data._id;
+    
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     alert("Erro ao cadastrar o aluno.");

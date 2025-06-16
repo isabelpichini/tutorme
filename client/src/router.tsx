@@ -13,7 +13,8 @@ export default function AppRoutes() {
       <Route path="*" element={<NotFound />} />
       <Route path="/design-system" element={<DesignSystem />} />
       <Route path="/" element={<Home />} />
-      <Route path="/settings" element={<Settings />} />
+      <Route path="/settings/" element={<Settings />} />
+      <Route path="/settings/:id" element={<Settings />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/student-login" element={<StudentLogin />} />
       <Route path="/student-signup" element={<StudentSignup />} />

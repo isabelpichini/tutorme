@@ -1,15 +1,9 @@
 import axios from "axios";
+import { type PatchUserParams } from "@/types/patchParams";
 
-export const patchUserInfo = async (data: {
-  nome: string;
-  email: string;
-  senha: string;
-}) => {
+export const patchUserInfo = async (data: PatchUserParams) => {
   try {
-    const response = await axios.put(
-      "http://localhost/5000/api/alunos",
-      data
-    );
+    const response = await axios.put("http://localhost/5000/api/alunos", data);
 
     if (response.status === 200) {
       return { success: true };

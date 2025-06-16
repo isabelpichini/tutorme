@@ -5,18 +5,23 @@ import "@/styles/StudentSignup/SignupForm.css";
 
 import Btn from "@/components/common/Button.tsx";
 import InputField from "@/components/common/InputField.tsx";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
   const { formData, updateField, currentStep, nextStep, prevStep } =
     useRegisterContext();
 
-  const handleSubmit = async () => {
-    const result = await submitSignupForm(formData);
+  const navigate = useNavigate();
 
-    if (result?.success) {
-      alert("Usuário cadastrado com sucesso!");
-    } else {
-      console.log(result?.message);
+  const handleSubmit = async () => {
+    try {
+      const idAluno = await submitSignupForm(formData);
+
+      if (idAluno) {
+        navigate(`/settings/${idAluno}`);
+      }
+    } catch (error) {
+      console.error("Registration failed:", error);
     }
   };
 
@@ -26,9 +31,9 @@ export default function LoginForm() {
         <>
           <InputField
             type="text"
-            id="name"
-            name="name"
-            customValue={formData.name}
+            id="nome"
+            name="nome"
+            customValue={formData.nome}
             label="Nome:"
             customClass="input"
             required="true"
@@ -63,9 +68,9 @@ export default function LoginForm() {
           <div className="input-row">
             <InputField
               type="text"
-              id="city"
-              name="city"
-              customValue={formData.city}
+              id="cidade"
+              name="cidade"
+              customValue={formData.cidade}
               label="Cidade:"
               customClass="input input-70"
               required="true"
@@ -74,8 +79,8 @@ export default function LoginForm() {
             <InputField
               type="text"
               id="state"
-              name="state"
-              customValue={formData.state}
+              name="estado"
+              customValue={formData.estado}
               label="Cidade:"
               customClass="input input-30"
               required="true"
@@ -84,9 +89,9 @@ export default function LoginForm() {
           </div>
           <InputField
             type="tel"
-            id="phone"
-            name="phone"
-            customValue={formData.phone}
+            id="telefone"
+            name="telefone"
+            customValue={formData.telefone}
             label="Celular:"
             customClass="input"
             required="true"
@@ -99,9 +104,9 @@ export default function LoginForm() {
         <>
           <InputField
             type="password"
-            id="password"
-            name="password"
-            customValue={formData.password}
+            id="senha"
+            name="senha"
+            customValue={formData.senha}
             label="Password:"
             customClass="input"
             required="true"
@@ -109,9 +114,9 @@ export default function LoginForm() {
           />
           <InputField
             type="password"
-            id="confirmPassword"
-            name="confirmPassword"
-            customValue={formData.confirmPassword}
+            id="confirmarSenha"
+            name="confirmarSenha"
+            customValue={formData.confirmarSenha}
             label="Password:"
             customClass="input"
             required="true"
