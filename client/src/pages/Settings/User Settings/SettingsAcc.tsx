@@ -7,7 +7,7 @@ import "@/styles/Settings/SettingsAcc.css";
 
 export default function SettingsAcc() {
   const [user, setUser] = useState<UserDTO>({
-    id: "",
+    _id: "",
     nome: "Current Name",
     email: "",
     cpf: "",

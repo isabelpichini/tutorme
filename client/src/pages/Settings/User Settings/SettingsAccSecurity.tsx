@@ -6,7 +6,7 @@ import { type UserDTO } from "@/types/UserDTO";
 
 export default function SettingsAccSecurity() {
   const [user, setUser] = useState<UserDTO>({
-    id: "",
+    _id: "",
     nome: "Current Name",
     email: "",
     cpf: "",
